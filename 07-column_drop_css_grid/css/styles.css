@@ -50,3 +50,31 @@ p {
 
 
 /** CODIGO AQUI **/
+
+@media (min-width: 480px) {
+     .column-drop-css {
+          display: grid;
+          grid-template-areas: "prim seg"
+                                "terc terc";
+          grid-template-columns: repeat(2, 1fr);
+          grid-gap: 2rem;
+     }    
+     .segunda{
+            grid-area: seg;
+     }
+    .primera{
+            grid-area: terc;
+    }
+}
+@media (min-width: 768px) {
+    .column-drop-css {
+        grid-template-areas: "prim seg terc";
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .segunda{
+        grid-area: terc;
+     }
+    .primera{
+        grid-area: seg;    
+    }
+}
