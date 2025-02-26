@@ -36,4 +36,30 @@ p {
     text-transform: uppercase;
 }
 
-/** CODIGO AQUI **/
+/** 
+    CODIGO AQUI 
+    MOSTLY FLUID
+    DEFINICION PARA QUE EL CONTENEDOR SE ADAPTE AL TAMAÑO DE LA
+    PANTALLA - QUE FLUYA SEGUN PORCENTAJES Y/O TANAÑOS MAXIMOS
+**/
+
+.contenedor{
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+@media (min-width: 768px){
+    .contenedor{
+        width: 80%;
+    }
+}
+
+@media (min-width: 992px){
+    .contenedor{
+        width: 60%;
+    }
+}
+
+img{
+    max-width: 100%;
+}
