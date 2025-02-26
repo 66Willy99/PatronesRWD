@@ -49,3 +49,16 @@ p {
 
 
 /** CODIGO AQUI **/
+
+@media (min-width: 768px) {
+    .con-sidebar{
+        display: flex;
+        gap: 2rem /* es el espacio como flex-basis */
+    }
+    aside{
+        flex: 1; /* es igual a flex: 0 0 calc(33.3% -1rem)*/
+    }
+    article{
+        flex: 3;
+    }
+}
